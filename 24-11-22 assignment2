@@ -1,0 +1,26 @@
+a=int(input('a value'))
+b=int(input('b value'))
+if a>b:
+    print('true')
+else:
+    print('false')
+if a<b:
+    print('true')
+else:
+    print('false')
+if a==b:
+    print('true')
+else:
+    print('false')
+if a>=b:
+    print('true')
+else:
+    print('false')
+if a<=b:
+    print('true')
+else:
+    print('false')
+if a!=b:
+    print('true')
+else:
+    print('false')
