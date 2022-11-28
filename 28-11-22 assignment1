@@ -1,0 +1,6 @@
+pin=int(input('pin'))
+check=int(input('enter pin'))
+if pin==check:
+    print('entered pin is correct\nTransaction continues.....')
+else:
+    print('incorrect pin\nTry again.....')
