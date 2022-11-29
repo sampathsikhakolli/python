@@ -1,0 +1,21 @@
+name=input('enter employee name')
+des=input('enter employee designation')
+sal=int(input('enter the basic salary'))
+da=int(input('enter the daily allowance'))
+ta=int(input('enter the travelling allowance'))
+ha=int(input('enter the housing allowance'))
+netsal=sal+da+ta+ha
+if netsal>100000:
+    tax=(netsal*10)/100
+elif netsal>50000:
+    tax=(netsal*7)/100
+elif netsal>40000:
+    tax=(netsal*4)/100
+elif netsal>20000:
+    tax=(netsal*2)/100
+else:
+    tax=0
+print('employee name',name)
+print('designation',des)
+print('netsalary',netsal)
+print('tax',tax)
