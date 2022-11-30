@@ -1,0 +1,53 @@
+global DIWALI
+global CHRISTMAS
+cno=int(input('enter the customer number'))
+name=input('enter the customer name')
+phno=int(input('enter the mobile number of the customer'))
+addr=input('enter customer address')
+coffcs=180
+soapcs=100
+oilcs=1500
+brushcs=30
+toothpastecs=100
+coffee=int(input('enter the number of coffee packets'))
+soap=int(input('enter the number of soaps'))
+oil=int(input('enter the number of boxes'))
+brushes=int(input('enter the number of sheets'))
+toothpaste=int(input('enter the number of toothpastes'))
+bill=coffee*coffcs+soap*soapcs+oil*oilcs+brushes*brushcs+toothpastecs*toothpaste
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+bill=bill+tax
+disc=0
+coup=input('enter the coupon code')
+if coup=='DIWALI' and bill>=5000:
+        disc=bill*10/100
+elif coup=='DIWALI' and bill>=3000:
+         disc=bill*6/100
+elif coup=='DIWALI' and bill>=1000:
+          disc=bill*4/100
+else:
+          disc=0
+if coup=='CHRISTMAS' and bill>=3000:
+        disc=bill*20/100
+elif coup=='CHRISTMAS' and bill>=2000:
+         disc=bill*10/100
+elif coup=='CHRISTMAS' and bill>=1000:
+          disc=bill*5/100
+else:
+          disc=0
+bill=bill-disc
+print('customer name:',name)
+print('customer number:',cno)
+print('customer phone number:',phno)
+print('customer address:',addr)
+print('tax',tax)
+print('total bill',bill)
