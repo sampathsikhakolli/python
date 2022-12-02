@@ -1,0 +1,29 @@
+def eligibility(n):
+   if n>=18:
+     print('you are eligible..')
+   else:
+     print('you are not eligible..')
+    
+n=int(input('enter your age:'))
+eligibility(n)
+
+def eligibility(n):
+    if n>=18:
+      return 'eligible'
+    else:
+      return 'not eligible'
+
+n=int(input('enter your age:'))
+result=eligibility(n)
+print('eligibility status:',result)
+
+def eligibility(n):
+    if n>=18:
+      return True
+    else:
+      return False
+n=int(input('enter your age:'))
+if eligibility(n):
+  print('eligible')
+else:
+  print('not eligible')
