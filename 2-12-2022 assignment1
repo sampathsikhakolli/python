@@ -1,0 +1,33 @@
+def biggest(a,b):
+   if a>b:
+     print(a,'is bigger number')
+   else:
+     print(b,'is bigger number')
+    
+a=int(input('enter 1st number:'))  
+b=int(input('enter 2nd number:'))
+biggest(a,b)
+
+def biggest(a,b):
+    if a>b:
+      return a
+    else:
+      return b
+
+a=int(input('enter 1st number:'))  
+b=int(input('enter 2nd number:'))
+big=biggest(a,b)
+print(big,'is bigger number')
+
+def biggest(a,b):
+    if a>b:
+      return True
+    else:
+      return False
+''
+a=int(input('enter 1st number:'))  
+b=int(input('enter 2nd number:'))
+if biggest(a,b):
+  print(a,'is bigger number')
+else:
+  print(b,'is bigger number')
