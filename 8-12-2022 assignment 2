@@ -1,0 +1,8 @@
+r=int (input('enter no of rows:'))
+c=int(input('enter no of columns:'))
+k=r*c
+for i in range (r):
+    for j in range (c):
+        print(k, end='  ')
+        k=k-1
+    print()
