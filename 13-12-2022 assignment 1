@@ -1,0 +1,7 @@
+l=[]
+n=int(input('enter the number of districts:'))
+for i in range (n):
+    x=input('Enter districts:')
+    l.append(x)
+    l.sort()
+print(l)
