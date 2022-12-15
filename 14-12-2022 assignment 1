@@ -1,0 +1,10 @@
+n=int(input('enter no of numbers:'))
+num=list(map(int,input('enter numbers:').split()))
+min=max=num[0]
+for i in num:
+    if min>i:
+        min=i
+    if max<i:
+        max=i
+print(min)
+print(max) 
