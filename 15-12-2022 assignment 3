@@ -1,0 +1,15 @@
+n=int(input('enter no of numbers:'))
+a=list(map(int,input('enter numbers:').split()))
+key=int(input('enter key to compare:'))
+flag=0
+for i in range(n):
+    for j in range(i+1,n):
+        if (a[i]-a[j])==key or (a[j]-a[i])==key:
+            flag=1
+            break
+    if flag==1:
+        break
+if flag==1:
+    print('yes')
+else:
+    print('no')
