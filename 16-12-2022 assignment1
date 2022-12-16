@@ -1,0 +1,6 @@
+str=input('Enter the string:')
+length=len(str)
+print(length)
+print(str.lower())
+print(str.upper())
+print(str.swapcase())
