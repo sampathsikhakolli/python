@@ -1,0 +1,9 @@
+n=int(input('enter no of numbers:'))
+no=0
+num=list(map(int,input('enter numbers:').split()))
+for i in range(0,n):
+    if num[i]<0:
+        num[i],num[no]=num[no],num[i]
+        no=no+1
+for i in num:
+    print(i)
