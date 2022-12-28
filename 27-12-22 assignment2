@@ -1,0 +1,7 @@
+n=int(input())
+num=list(map(int,input().split()))
+x=int(input())
+flag=0
+for i in range(n):
+    if num[i]==x:
+        print(i,end=' ')
